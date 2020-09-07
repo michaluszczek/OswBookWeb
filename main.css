@@ -10,6 +10,10 @@ h1 {
 }
 body {
     font: 300 16px/1.5em "Open Sans";
+    background-image: url("oswiecim TESTOWE.jpg");
+    /*background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));*/
+    background: linear-gradient(to left, transparent, white),
+      url("oswiecim TESTOWE.jpg");
 }
 .footnote {
   margin: 40px 0 0 20px;
@@ -19,7 +23,10 @@ body {
 
 form {
   width: 400px;
-  padding: 80px 0 0 40px;
+  padding: 80px 0 40px 40px;
+  display: inline-block;
+  vertical-align: bottom;
+  border-radius: 15px;  
 }
 
 input.button {
@@ -58,7 +65,7 @@ input.button {
     border-bottom: 1px solid #c0c0c0;
     border-radius: 4px;
     overflow: hidden;
-    color: #505050;
+    color: #505050;    
 }
 .formInput:hover {
     color: black;
