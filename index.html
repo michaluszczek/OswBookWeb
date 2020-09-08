@@ -2,38 +2,23 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Task Timeline</title>
+    <title>Visit Auschwitz</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
     </head>
   <body>
-    
-    <form>        
-        <link rel="stylesheet" href="main.css">
-        <h1>Visit Auschwitz</h1>
-        <p id = "date">Choose date of your trip, amount of tickets and names</p>
-        <div class='formInput'>
-          <i class='fa fa-user'></i>
-          <input type='text' name='name' placeholder='Name' required />
-        </div>
-        <div class='formInput'>
-          <i class='fa fa-ticket'></i>          
-          <input class = 'fa fa-chevron-up' type='number' name='tickets' placeholder='Amount of tickets' min="1" max="8"  maxlength = "1"
-                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(1, this.maxLength);" />
-        </div>
-        <div class='formInput'>
-          <i class='fa fa-envelope-o'></i>
-          <input type='email' name='email' placeholder='Email' required/>
-        </div>
-        <div class='formInput dateSelector'>
-          <i class='fa fa-calendar-o'></i>
-          <input type='text' name='birthday' id='hbdsdf' placeholder='Trip date'/>
-        </div>
-        <input type="submit" class='button' value='Submit'> 
+    <link rel="stylesheet" href="main.css">
+    <h1>Visit <br> Auschwitz</h1>    
+    <form> 
+      <p>Am not going to argue whether a machine can “really” be alive, “really” be self-aware.
+         Is a virus self-aware?  Nyet.  How about oyster?  I doubt it.  A cat?  Almost certainly.
+         A human?  Don’t know about you, tovarishch, but I am.  
+      </p> 
+        <button type="button" class='button'>Book your tour</button>
+        <button type="button" class='button'>Learn about us</button>
         <script src="app.js"></script>     
       </form>
   </body>
