@@ -14,11 +14,15 @@ h1 {
 body {
     font: 300 16px/1.5em "Open Sans";
     background-image: url("oswiecim TESTOWE.jpg");
-    /*background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));*/
     background: linear-gradient(to left, transparent, white),
-      url("oswiecim TESTOWE.jpg");
+      url("oswiecim TESTOWE.jpg") no-repeat;
 }
-
+#fields
+{   
+    display: inline-flex;
+    flex-direction: column;
+    display: none;    
+}
 
 .footnote {
   margin: 40px 0 0 20px;
@@ -26,12 +30,45 @@ body {
   color: #a0a0a0;
 }
 
-form {
+#add_btn {
+    background-color: transparent;
+}
+
+#form1 {
   width: 470px;
   padding: 40px 40px 40px 40px;
-  display: inline-block;
-  vertical-align: bottom;
   border-radius: 25px;  
+  display: flex;
+  flex-direction: column;
+}
+
+#form2 {
+    width: 470px;
+    padding: 40px 40px 40px 40px;
+    vertical-align: bottom;
+    border-radius: 25px;  
+    flex-direction: row;
+    display: inline-flex;
+    display: none;
+}
+
+.buttonAndInput {
+    display: inline-flex;
+}
+
+i.btn.next.next-year.fa.fa-fast-forward,
+i.btn.prev.prev-year.fa.fa-fast-backward {
+    display: none;
+}
+ 
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+input[type='number'] {
+    -moz-appearance:textfield;
 }
 
 input.button {
@@ -58,6 +95,7 @@ input.button {
     box-shadow: 1px 1px 3px rgba(0,0,0,0.25);
     transition:  background-color .1s, color .2s, box-shadow .3s;
 }
+
 .button:hover {
     background: #404040;
     color: white;
@@ -68,6 +106,7 @@ input.button {
 .button:active {
     transform: translateY(4px);
 }
+
 .formInput {
     position: relative;
     font: 300 1em/48px "Open Sans";
@@ -117,8 +156,8 @@ input.button {
     background: transparent;
     color: inherit;
     transition: border-color .2s, color .2s, background-color .4s;
+    
 }
-
 .formInput.hasTextarea {
     line-height: 24px;
     height: 191px;

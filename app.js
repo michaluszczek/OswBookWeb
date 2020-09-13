@@ -1,4 +1,3 @@
-
         var monthNames = {
             0: "January",
             1: "February",
@@ -33,7 +32,7 @@
             this.buildDOM();
             this.selectDate(this.date.today.getFullYear(),this.date.today.getMonth(),this.date.today.getDate())
             this.constructDayArea();
-            this.updateInput('Trip date','','');
+            this.updateInput('choose a date','','');
 
 
             t = this;

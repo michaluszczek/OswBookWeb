@@ -1,5 +1,5 @@
-$( document ).ready( function() {
-  $( "#signup" ).click( function() {
-    $( "#form1" ).toggle( 'slow' );
-  });
+$("#b1").click(function(){
+  $("#form1").hide('fast');
+  $("#form2").show('fast');
 });
+
