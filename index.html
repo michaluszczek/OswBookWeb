@@ -18,41 +18,41 @@
       <button type="button" class='button'id ='b2'>Learn about us</button>    
       <script src="app2.js"></script>
     </form>
-    <form id = "form2">
-      <section>        
-        <p id = "date">Choose date of your trip and amount of tickets</p>
-        <div class="secondForm">
-          <div class='formInput'>
-            <i class='fa fa-ticket' id = "ticket"></i>
-            <div class="buttonAndInput">
-              <input type='number' name='tickets' id = 'ticketAmnt' placeholder='Amount of tickets' min="1" max="8" oninput="(validity.valid)||(value='');"/>
-              <button type="button" id="add_btn" class='fa fa-plus-square'></button> 
-              <button type="button" id="rem_btn" class='fa fa-minus'></button> 
-              <script src="incOrdecrTickets.js"></script>
-            </div>                      
-          </div>        
-          <div class='formInput'>
-            <i class='fa fa-envelope-o'></i>
-            <input type='email' name='email' placeholder='email@example.com' required/>
+    <container id = "all_forms">
+      <form id = "form2">
+          <p id = "date">Choose date of your trip and amount of tickets</p>
+          <div class="secondForm">
+            <div class='formInput'>
+              <i class='fa fa-ticket' id = "ticket"></i>
+              <div class="buttonAndInput">
+                <input type='number' name='tickets' id = 'ticketAmnt' placeholder='Amount of tickets' min="1" max="8" oninput="(validity.valid)||(value='');"/>
+                <button type="button" id="add_btn" class='fa fa-plus-square'></button> 
+                <button type="button" id="rem_btn" class='fa fa-minus'></button> 
+                <script src="incOrdecrTickets.js"></script>
+              </div>                      
+            </div>        
+            <div class='formInput'>
+              <i class='fa fa-envelope-o'></i>
+              <input type='email' name='email' placeholder='email@example.com' required/>
+            </div>
+            <div class='formInput dateSelector'>
+              <i class='fa fa-calendar-o'></i>
+              <input type='text' name='birthday' id='hbdsdf' placeholder='choose a date'/>
+            </div>
           </div>
-          <div class='formInput dateSelector'>
-            <i class='fa fa-calendar-o'></i>
-            <input type='text' name='birthday' id='hbdsdf' placeholder='choose a date'/>
+          <button type="button" class="button" id = 'b3'>Next</button>
+          <button type="button" class="button" id = 'b4'>Back</button> 
+          <script src="app.js"></script>
+          <script src="app3.js"></script>
+      </form>        
+        <form id = "name_fields">
+          <div class='formInput' id = 'fields'>
+            <!-- <i class='fa fa-user' id = ''></i> -->
+            <!-- <input type='number' name='name' placeholder='Name' id = "name"/> -->
           </div>
-        </div>
-        <button type="button" class="button" id = 'b3'>Next</button>
-        <button type="button" class="button" id = 'b4'>Back</button> 
-        <script src="app.js"></script>
-        <script src="app3.js"></script>        
-      </section>
-      <section>
-        <div class='formInput' id = 'fields'>
-          <!-- <i class='fa fa-user' id = 'user'></i> -->
-          <!-- <input type='number' name='name' placeholder='Name' id = "name"/> -->
-        </div>
-          
-      </section>
-    </form>
+          <button type="button" class="button" id = 'b5'>Go To Payment</button> 
+        </form>
+    </container>
   </body>
 </html>
   

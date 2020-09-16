@@ -1,29 +1,30 @@
-$("#add_btn").click(function(){
-    var amount = $("#ticketAmnt").val(); 
+$("#add_btn").on('click', function(){
+    var amount = $("#ticketAmnt").val();
     if(amount < 8) {
         amount++;
         $("#ticketAmnt").val(amount); 
-        appendNames();  
+        $('#fields').prepend("<input type= 'text' name='name' placeholder='Name' id =fn_" + amount + ">");
+                
     }   
   });
 
-$("#rem_btn").click(function(){
-    if(amount > 1 ) {
+$("#rem_btn").on('click', function(){
+    var amount = $("#ticketAmnt").val();
+    if(amount != 0 ) {        
         amount--;
+        $('#fields').children().last().remove();
         $("#ticketAmnt").val(amount);
-        removeNames();  
     }
 });
   
 function appendNames() {
     var icon = "<z class='fa fa-user'></i>";
-    var new_field = "<input type='text' name='name' placeholder='Name'/>"; 
-    $('#fields').append(icon);
-    $('#fields').append(new_field);
+    //$('#fields').append(icon);
+    $('#fields').prepend($new_field);
   }
 
 function removeNames() {
 
-    var new_field = "<input type='text' name='name' placeholder='Name'/>"; 
+    var new_field = "<input type='text' name='name' placeholder='FirstName' />"; 
     $(new_field).remove();
     }
