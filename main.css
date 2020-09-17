@@ -16,6 +16,7 @@ body {
     background-image: url("oswiecim TESTOWE.jpg");
     background: linear-gradient(to left, transparent, white),
       url("oswiecim TESTOWE.jpg") no-repeat;
+
 }
 
 .footnote {
@@ -35,10 +36,10 @@ body {
     display: none;
     padding: 40px 40px 40px 40px;
     border-radius: 25px;  
-
-
 }
-
+#f1 {
+    display: flex;
+}
 #form1 {
   width: 470px;
   padding: 40px 40px 40px 40px;
